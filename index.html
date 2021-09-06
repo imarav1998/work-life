@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+  </head>
+  <body>
+    <div id="ko-container">
+      <header>
+        <h1>Hi i'm <span>Pon Aravind</span></h1>
+      </header>
+      <div class="middle">
+        <h2>Remaining hrs : <span data-bind="text: totalHrs"></span></h2>
+        <div class="work hours">
+          <p>How many hours you work in a day</p>
+          <div class="countables">
+            <button data-bind="click: workInc">+</button>
+            <h1 data-bind="text: workCount"></h1>
+            <button data-bind="click: workDec">-</button>
+          </div>
+        </div>
+        <div class="sleep hours">
+          <p>How many hours you sleep in a day</p>
+          <div class="countables">
+            <button data-bind="click: sleepInc">+</button>
+            <h1 data-bind="text: sleepCount"></h1>
+            <button data-bind="click: sleepDec">-</button>
+          </div>
+        </div>
+        <div class="familyhours">
+          <p>How many hours you spend with family in a day</p>
+          <div class="countables">
+            <button data-bind="click: familyInc">+</button>
+            <h1 data-bind="text: familyCount"></h1>
+            <button data-bind="click: familyDec">-</button>
+          </div>
+        </div>
+        <div class="study hours">
+          <p>How many hours you study in a day</p>
+          <div class="countables">
+            <button data-bind="click: studyInc">+</button>
+            <h1 data-bind="text: studyCount"></h1>
+            <button data-bind="click: studyDec">-</button>
+          </div>
+        </div>
+        <p data-bind="text: message" class="message"></p>
+      </div>
+      <footer>
+        <p>Developed By Pon Aravind</p>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
